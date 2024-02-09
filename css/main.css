@@ -1,15 +1,23 @@
 /******** GLOBAL STYLES ********/
+html {
+	font-size: 16px;
+}
+
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-	font-size: 16px;
+	font-size: .9em;
 	color: #000000;
 }
 
 /* The width property has been changed to max-width */
 .content-wrapper {
 	max-width: 1200px;
-	margin: 0 auto;
-	overflow: auto;
+	/* margin: 0 auto;
+	overflow: auto; */
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
 }
 
 h1,
@@ -21,36 +29,41 @@ h4 {
 }
 
 h1 {
-	font-size: 30px;
+	font-size: 1.875em;
 }
 
 h2 {
-	font-size: 24px;
+	font-size: 1.5em;
 }
 
 h3 {
-	font-size: 20px;
+	font-size: 1.25em;
 }
 
 h4 {
-	font-size: 12px;
+	font-size: 0.75em;
 }
 
 p {
-	line-height: 36px;
+	line-height: 2.25em;
 }
 
 /******** HEADER STYLES ********/
 /* The widths are in a percentage! */
 header {
-	height: 110px;
-	margin: 0 auto;
+	/* height: 110px;
+	margin: 0 auto; */
+	display: flex;
+	justify-content: center;
+	text-align: center;
 }
 
 header h1 {
-	float: left;
+	/* float: left; */
 	margin: 0;
 	padding: 38px 0;
+	width: 100%;
+	border-bottom: 3px solid #77A466;
 }
 
 header h1 span {
@@ -58,7 +71,7 @@ header h1 span {
 }
 
 header nav {
-	float: right;
+	/* float: right; */
 	padding: 46px 0;
 }
 
@@ -69,10 +82,11 @@ header nav ul {
 
 header nav ul li {
 	display: inline-block;
-	font-size: 14px;
+	font-size: .972rem;
 	font-weight: 700;
 	text-transform: uppercase;
 	padding: 0 10px;
+	width: 100%;
 }
 
 header nav ul li a {
@@ -98,6 +112,8 @@ header nav ul li a {
 /******** BOTTOM SECTION ********/
 .top-section,
 .bottom-section {
+	display: flex;
+	justify-content: center;
 
 }
 
@@ -110,22 +126,25 @@ header nav ul li a {
 .section-two,
 .section-three {
 	box-sizing: border-box;
-	float: left;
+	/* float: left; */
 	padding: 0 40px;
 }
 
 .section-one {
-	width: 29%;
+	/* width: 29%; */
+	width: 100%;
 }
 
 .section-two {
-	width: 42%;
+	/* width: 42%; */
+	width: 100%;
 	border-left: 5px solid #EEE;
 	border-right: 5px solid #EEE;
 }
 
 .section-three {
-	width: 29%;
+	/* width: 29%; */
+	width: 100%;
 }
 
 .bottom-section h3 {
@@ -139,7 +158,7 @@ header nav ul li a {
 
 .menu-list li {
 	color: #45610E;
-	font-size: 16px;
+	font-size: 0.9rem;
 	line-height: 36px;
 }
 
@@ -148,11 +167,13 @@ header nav ul li a {
 footer {
 	text-align: center;
 	margin-top: 8px;
+	display: flex;
+	justify-content: center;
 }
 
 footer span {
 	font-family: 'Galada', cursive;
 	text-transform: lowercase;
 	color: #45610E;
-	font-size: 14px;
+	font-size: 0.972rem;
 }
